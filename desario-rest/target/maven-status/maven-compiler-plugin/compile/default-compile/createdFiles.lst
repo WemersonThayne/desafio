@@ -1,0 +1,7 @@
+br\com\desafio\ApplicationBase.class
+br\com\desafio\endpoint\impl\ApiInfoEndPointImpl.class
+br\com\desafio\endpoint\ApiInfoEndPoint.class
+br\com\desafio\ApplicationInitializer.class
+br\com\desafio\endpoint\impl\CnesEndPointImpl.class
+br\com\desafio\filter\CORSFilter.class
+br\com\desafio\endpoint\CnesEndPoint.class

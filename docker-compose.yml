@@ -1,0 +1,19 @@
+version: '3.1'
+
+services:
+  desafio-database:
+    container_name: desafio-database
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: admin
+      POSTGRES_USER: admin
+      POSTGRES_DB: desafio-database
+    ports:
+    - 5432:5432
+    volumes:
+    - desafio_data
+
+volumes:
+  desafio_data:
+    driver: local

@@ -1,0 +1,12 @@
+resourcePackages:
+- br.com.desafio.endpoint
+prettyPrint: true
+cacheTTL: 0
+openAPI:
+  servers:
+     - url: http://localhost:8080/desafio-backend/api/v1/
+       description: Servidor (Contexto EAR)
+  info:
+    version: '1.0.0'
+    title: API Rest do Desafio
+    description: 'Recursos expostos pelo Projeto'

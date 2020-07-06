@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>desafio</artifactId>
+		<groupId>br.com</groupId>
+		<version>0.0.1</version>
+	</parent>
+
+	<artifactId>desafio-ear</artifactId>
+	<packaging>ear</packaging>
+
+	<name>desafio-ear (Implantável Serviços)</name>
+	<description>Módulo responsável por gerar o implantável da aplicação.</description>
+
+	<build>
+		<finalName>${project.parent.artifactId}</finalName>
+		<plugins>
+			<plugin>
+
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-ear-plugin</artifactId>
+				<version>3.0.1</version>
+				<configuration>
+					<filtering>true</filtering>
+					<defaultLibBundleDir>lib</defaultLibBundleDir>
+					<generateApplicationXml>true</generateApplicationXml>
+					<modules>
+						<webModule>
+							<groupId>br.com</groupId>
+							<artifactId>desafio-rest</artifactId>
+							<contextRoot>/desafio-backend</contextRoot>
+						</webModule>
+						<ejbModule>
+							<groupId>br.com</groupId>
+							<artifactId>desafio-service</artifactId>
+						</ejbModule>
+						<ejbModule>
+							<groupId>br.com</groupId>
+							<artifactId>desafio-persistence</artifactId>
+						</ejbModule> 
+					</modules>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>br.com</groupId>
+			<artifactId>desafio-service</artifactId>
+			<version>${project.version}</version>
+			<type>ejb</type>
+		</dependency>
+		<dependency>
+			<groupId>br.com</groupId>
+			<artifactId>desafio-persistence</artifactId>
+			<version>${project.version}</version>
+			<type>ejb</type>
+		</dependency>
+		<dependency>
+			<groupId>br.com</groupId>
+			<artifactId>desafio-rest</artifactId>
+			<version>${project.version}</version>
+			<type>war</type>
+		</dependency>
+	</dependencies>
+
+</project>
+

@@ -1,0 +1,17 @@
+.project
+.classpath
+desafio.iml
+/.idea/
+/.settings/
+/desafio-ear/desafio-ear.iml
+/desafio-persistence/desafio-persistence.iml
+/desafio-rest/desafio-rest.iml
+/desafio-service/desafio-service.iml
+/desafio-*/.settings/
+/desafio-*/.classpath
+/desafio-*/.project
+/desafio-*/.gitignore
+/desafio-*/target/
+/desafio-*/bin/
+/desafio-*/.settings
+/target/
