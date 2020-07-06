@@ -35,7 +35,7 @@ O projeto Perícia utiliza o docker como contexto.
 
     2-O seguinte comando deverá ser utilizado para a criação da imagem Docker:
     
-        docker build -t desafio_backend:<version> --build-arg='DB_CONNECTION_URL_ARG=jdbc:jdbc:postgresql://<db_host>:<db_port>;DatabaseName=<db_name>' --build-arg='DB_USER_ARG=<db_username>' --build-arg='DB_PASSWORD_ARG=<db_password>' --no-cache .
+        docker build -t desafio_backend:<version> --build-arg='DB_CONNECTION_URL_ARG=jdbc:jdbc:postgresql://<db_host>:<db_port>/<db_name>' --build-arg='DB_USER_ARG=<db_username>' --build-arg='DB_PASSWORD_ARG=<db_password>' --no-cache .
 
 Legenda:
 
