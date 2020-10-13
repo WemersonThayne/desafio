@@ -17,7 +17,7 @@
 		<version.surefire.plugin>3.0.0-M3</version.surefire.plugin>
 		<version.plugin.compiler>3.8.1</version.plugin.compiler>
 		<version.plugin.war>3.2.3</version.plugin.war>
-		<version.junit>4.12</version.junit>
+		<version.junit>4.13.1</version.junit>
 		<version.mockito>1.10.19</version.mockito>
 		<version.log4j>2.12.0</version.log4j>
 		<version.jacoco>0.8.4</version.jacoco>
